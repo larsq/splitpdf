@@ -1,0 +1,3 @@
+*.pyc
+# since the whole module is about pdf
+*.pdf
