@@ -8,7 +8,7 @@ def split_pdf(ranges, infile='in.pdf', outfile='out.pdf'):
     all = PdfFileWriter()
 
     for range in ranges:
-        start = range['start']-1
+        start = range['start'] - 1
         endExclusive = range['end'] or ipdf.getNumPages()
         for i in xrange(start, endExclusive):
             all.addPage(ipdf.getPage(i))
